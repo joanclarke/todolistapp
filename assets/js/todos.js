@@ -1,16 +1,15 @@
 // Check off specific todo by clicking
-$("li").click(function(){
+$("ul").on("click", "li", function(){
 $(this).toggleClass("completed");
 });
 
 // Click on the X to delete todos
-$("span").click(function(event){
+$("ul").on("click", "span", function(event){
   $(this).parent().fadeOut(500,function(){
     $(this).remove();
   });
   event.stopPropagation();
 });
-
 
 $("input[type = 'text']").keypress(function(){
   if(event.which === 13){
