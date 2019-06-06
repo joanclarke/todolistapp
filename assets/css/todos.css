@@ -17,6 +17,7 @@ ul {
 .fa-plus {
   float: right;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   background: #EAECC6;  /* fallback for old browsers */
@@ -34,6 +35,22 @@ li {
 
 li:nth-child(2n) {
   background-color: #f7f7f7;
+}
+
+span {
+  background-color: #e74c3c;
+  height: 40px;
+  margin-right: 20px;text-align: center;
+  color: #ffffff;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span {
+  width:40px;
+  opacity: 1.0;
 }
 
 input {
